@@ -2,18 +2,19 @@
   box-sizing: border-box;
 }
 
+/* */
 body,
 html {
-  font-family: "montserrat";
+  font-family: "montserrat", sans-serif;
   background-color: #fff;
   color: #333;
   padding: 16px;
-  max-width: 100%;
-  width: 360px;
   margin: 0 auto;
-  position: static;
+  max-width: 1200px; 
+  width: 100%;    
   overflow-x: hidden;
 }
+
 
 .header {
   background-color: white;
@@ -430,6 +431,7 @@ nav img {
   width: 200px;
   height: 50px;
   left: 20px;
+      margin-left: 80px
 }
 
 .recent {
@@ -510,11 +512,12 @@ nav img {
   background-color: #ffff;
 }
 
+
 .arr {
-  width: 11%;
-  position: relative;
-  top: -32px;
-  left: 205px;
+    width: 11%;
+    position: relative;
+    top: -47px;
+    left: 320px;
 }
 .hoz {
   margin-top: -10px;
@@ -568,3 +571,16 @@ nav img {
   background-color: #F7F7F7;
 }
 
+@media (min-width: 768px) {
+  .your-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .your-section {
+    padding: 40px;
+  }
+}
